@@ -1,0 +1,11 @@
+User
+- FirstName
+- LastName
+- Email
+- BirthDate
+
+Post
+- Author(User)
+
+Application
+- DisplayPostsInDescendingOrder()
