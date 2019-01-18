@@ -17,7 +17,7 @@ namespace blogConsoleApp
             Console.WriteLine("################## Posts (0) ############### {0}", Environment.NewLine);
             Console.WriteLine("There are no posts to show at this moment");
             Console.WriteLine("--------------------------------------------{0}", Environment.NewLine);
-            Console.WriteLine("What do you want to do?");
+            Console.WriteLine("Menu:");
             Console.WriteLine("1 - Add a new post");
             Console.WriteLine("2 - Create a new account");
             Console.WriteLine("X - Exit");
