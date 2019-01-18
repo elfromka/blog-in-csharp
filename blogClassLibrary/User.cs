@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace blogClassLibrary
 {
-    class User
+    public class User : Person
     {
-        public int Id;
-        public string FirstName { get; private set; }
-        public string LastName { get; private set; }
-        private DateTime BirthDate;
-        public string EmailAdress { get; private set; }
+        public int Id { get; private set; }
+
+        public User(int id, string eMail, string firstName, string lastName, DateTime birthDate) : base(eMail, firstName, lastName, birthDate)
+        {
+            this.Id = id;
+        }
     }
 }

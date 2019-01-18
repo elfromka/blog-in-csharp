@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace blogClassLibrary
 {
-    class Post
+    public class Post
     {
-        public string Content { get; private set; }
+        public int Id { get; private set; }
+
+        public Post(int id, string author, string content, DateTime postDate):base(author, content, postDate)
+        {
+            this.Id = id;
+        }
     }
 }
