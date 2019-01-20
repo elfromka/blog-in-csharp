@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace blogClassLibrary
 {
-    internal class PostsService
+    public interface IPostsService
+    {
+        Post AddPost(string author, string content, DateTime postDate);
+    }
+
+    public class PostsService : IPostsService
     {
         private List<Post> posts;
         private int nextPostId = 1;

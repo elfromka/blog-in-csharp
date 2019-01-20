@@ -23,15 +23,22 @@ namespace blogConsoleApp
             Console.WriteLine("X - Exit");
         }
 
+        private static void DisplayPosts()
+        {
+            foreach (Post post in )
+        }
+
         static void Main(string[] args)
         {
             //DisplayMenu();
-
+            IPostsService postsService = new PostsService();
             CommonBoard commonboard = new CommonBoard(postsService);
 
+            //create post
             Post firstPost = AddPost("Orsi Sebestyen", "This is the content of the first post", new DateTime(2019, 01, 19));
-            User orsi = AddUser("Orsi Sebestyen", "This is the content of the first post", new DateTime(2019, 01, 19));
-
+            //create user
+            User orsi = AddUser("elfromka@yahoo.co.uk", "Orsolya", "Sebestyen", new DateTime(1994, 01, 01));
+            //showing/listing posts
             List<Post> posts = GetPosts();
         }
     }
