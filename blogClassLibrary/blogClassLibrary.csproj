@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommonBoard.cs" />
+    <Compile Include="IPostsService.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Post.cs" />
     <Compile Include="PostsService.cs" />

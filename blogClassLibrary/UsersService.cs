@@ -13,7 +13,7 @@ namespace blogClassLibrary
 
         public UsersService()
         {
-            this.users = new List<User> users;
+            this.users = new List<User>();
             AddUser("elfromka@yahoo.co.uk", "Orsolya", "Sebestyen", new DateTime(1994, 01, 01));
         }
 
